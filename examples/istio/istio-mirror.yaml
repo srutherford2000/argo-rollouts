@@ -68,10 +68,10 @@ spec:
               - primary
       steps:
         - setCanaryScale:
-            weight: 50
+            weight: 25
         - setMirrorRoute:
             name: mirror-route
-            percentage: 50
+            percentage: 75
             match:
               - method:
                   exact: POST
