@@ -42,10 +42,10 @@ spec:
       route:
         - destination:
             host: istio-host-split-stable
-          weight: 100
+          weight: 50
         - destination:
             host: istio-host-split-canary
-          weight: 0
+          weight: 50
 
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -53,7 +53,7 @@ kind: Rollout
 metadata:
   name: istio-host-split
 spec:
-  replicas: 4
+  replicas: 12
   strategy:
     canary:
       canaryService: istio-host-split-canary
