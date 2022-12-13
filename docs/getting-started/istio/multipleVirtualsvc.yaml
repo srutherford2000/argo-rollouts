@@ -14,12 +14,12 @@ spec:
         host: rollouts-demo-stable
         port:
           number: 15372
-      weight: 100
+      weight: 75
     - destination:
         host: rollouts-demo-canary
         port:
           number: 15372
-      weight: 0
+      weight: 25
   
 
 ---
@@ -39,10 +39,10 @@ spec:
         host: rollouts-demo-stable
         port:
           number: 15373
-      weight: 100
+      weight: 75
     - destination:
         host: rollouts-demo-canary
         port:
           number: 15373
-      weight: 0
+      weight: 25
   
