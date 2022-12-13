@@ -18,6 +18,7 @@ spec:
             routes:
             - secondary # At least one route is required
       steps:
+      - setWeight: 100
       - pause: {}
   revisionHistoryLimit: 2
   selector:
