@@ -1,6 +1,6 @@
 ## This examples sets up istio mirroring if running locally using docker for destkop you can add
 ## istio-host-split.com to your /etc/hosts and point it to 127.0.0.1 to view demo.
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   name: istio-host-split-canary
